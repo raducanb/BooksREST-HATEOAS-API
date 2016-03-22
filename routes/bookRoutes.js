@@ -27,7 +27,7 @@ var routes = function(Book){
               var bookJson = element.toJSON();
 
               bookJson.links = {};
-              bookJson.links.self = "http://" + req.headers.host + "/api/books"
+              bookJson.links.self = "http://" + req.headers.host + "/api/books/"
                                     + bookJson._id;
 
               booksWithLinks.push(bookJson);
